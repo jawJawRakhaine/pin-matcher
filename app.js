@@ -32,7 +32,8 @@ function times() {
     remain = remain - 1;
     tryTimes.innerText = remain;
   } else {
-    document.getElementById("submit-btn").style.display = "none";
+    const subBtn = document.getElementById("submit-btn");
+    subBtn.setAttribute("disabled", false);
   }
 }
 function verifyPin() {
